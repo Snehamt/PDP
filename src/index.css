@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+}
+
+li {
+   list-style: none; 
+}
+/* main{
+    display: grid;
+    grid-template-areas: " nav nav nav""sidebar products";
+    grid-template-rows: 50px auto;
+}
+
+Nav { grid-area: nav;}
+Sidebar { grid-area:sidebar;}
+Products{ grid-area:products} */
+
+
+
+
