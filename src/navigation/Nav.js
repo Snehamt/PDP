@@ -1,6 +1,4 @@
 import React from "react";
-import { FiHeart } from "react-icons/fi";
-import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
 
 function Nav({ handleInputChange, query }) {
@@ -128,7 +126,7 @@ function Nav({ handleInputChange, query }) {
                     <a href="#">
                       Sports
                       <div className="fly-item">
-                        <span>New!</span>
+                        <span>New</span>
                       </div>
                     </a>
                   </li>

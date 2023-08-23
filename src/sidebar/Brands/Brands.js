@@ -1,14 +1,13 @@
 import React from 'react';
-import "./Brands.css";
 import Input from '../../components/Input';
 
 function Brands({handleChange}) {
   return (
     <div>
-      <h2 className="sidebar-title brand-title">Brand</h2>
+      <h2 className="sidebar-title brand-title">BRAND</h2>
       <div>
       <label className="sidebar-label-container">
-      <input onChange={handleChange} type="radio" value="" name="test3" />
+      <input onChange={handleChange} type='checkbox' value="" name="test3" />
           <span className="checkmark"></span>All
       </label>
       <Input
@@ -55,8 +54,8 @@ function Brands({handleChange}) {
         />
         <Input
           handleChange={handleChange}
-          value="W"
-          title="W"
+          value="TEREZA"
+          title="TEREZA"
           name="test3"
         />
         <Input

@@ -1,30 +1,93 @@
-.sidebar-title{
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
 .container{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 0.938em;
     
 }
-.filter{
+/* .filter{
     font-size: 2rem;
     font-weight: 800;
-}
+} */
 
 .sidebar{
     position:fixed;
     overflow-x: hidden;
-    top: 8rem;
-    height: 79%;
+    top: 4em;
+    height: 92%;
     z-index: -1;
     display: flex ;
     flex-direction: column;
     
 }
+.brand-title, .color-title, .price-title, .categoty-title {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.sidebar-label-container {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidebar-label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 2px;
+    
+}
+
+.sidebar-label-container:hover input~.checkmark {
+    background-color: #eee2e2;
+}
+.sidebar-label-container input:checked ~.checkmark {
+    background-color: rgb(248, 242, 242);
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+}
+
+.sidebar-label-container input:checked ~.checkmark::after {
+    display: block;
+}
+
+.sidebar-label-container .checkmark::after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 @media screen and (min-width: 992px){
     .container{
@@ -32,6 +95,8 @@
     }
     .sidebar{
         padding-left: 2rem;
+        top: 7rem;
+        height: 82%;
     }
 }
 

@@ -53,10 +53,11 @@ function App() {
 
 
       return filteredProducts.map(
-        ({ img, title, star, reviews, prevPrice, newPrice }) => (
+        ({ img, title, star, reviews, prevPrice, newPrice, company }) => (
           <Card
             key={Math.random()}
             img={img}
+            company={company}
             title={title}
             star={star}
             reviews={reviews}

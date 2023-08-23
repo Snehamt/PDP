@@ -1,13 +1,12 @@
 import React from "react";
-import "./Colors.css";
 import Input from "../../components/Input";
 
 function Colors({handleChange}) {
   return (
     <div className="color-sidebar">
-      <h2 className="sidebar-title color-title">Color</h2>
+      <h2 className="sidebar-title color-title">COLOR</h2>
       <label className="sidebar-label-container">
-        <input onChange={handleChange} type="radio" value="" name="test1" />
+        <input onChange={handleChange} type='checkbox' value="" name="test1" />
         <span className="checkmark all"></span>
         All
       </label>

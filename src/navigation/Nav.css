@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&family=Rubik:wght@300;400;500;600&display=swap');
 
 :root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #794afa;
-    --secondary-dark-color: #453c5c;
+    --primary-color: #e03939;
+    --secondary-color: #ffffff;
+    --secondary-dark-color: #212122;
 
     --white-color: #ffffff;
-    --light-bg-color: #f2f3f5;
+    --light-bg-color: #be2e2e;
     --light-text-color: #7c899a;
     --border-color: #e5e8ec;
     --dark-color: #0a021c;
@@ -40,7 +40,7 @@
 
 body{
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.4;
     color: var(--dark-color);
@@ -67,14 +67,14 @@ input::placeholder{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 0.938em;
-    
 }
+
 .flexitem{
     display: flex;
     align-items: center;
 }
 .main-links a:hover{
-    color: var(--secondary-color);
+    color: var(--light-text-color);
 }
 
 .second-links a:hover{
@@ -111,10 +111,11 @@ header li > a {
 }
 
 .header-top .wrapper{
-    font-size: var(--font-small);
+    font-size: var(--font-smaller);
     font-weight: var(--fw3);
     justify-content: space-between;
-    line-height: 42px;
+    line-height: 40px;
+    margin-bottom: -1px;
 }
 .header-top .wrapper ul{
     gap: 2em;
@@ -165,8 +166,8 @@ header li > a {
 
 .circle {
     position: absolute;
-    top: -15px;
-    left: 0;
+    top: -3px;
+    left: 1;
     width: 38px;
     height: 38px;
     border-radius: var(--percent50);
@@ -177,37 +178,52 @@ header li > a {
 .circle::before{
    content: ''; 
    position: absolute;
-   width: 28px;
-   height: 28px;
+   width: 27px;
+   height: 25px;
    border-radius: var(--percent50);
    background-color: var(--secondary-color);
-   bottom: 5px;
-   right: 5px;
-   opacity: .4;
+   bottom: 7px;
+   right: 13px;
+   opacity: 1;
 }
 
 .header-nav nav > ul {
-    line-height: 100px;
+    line-height: 70px;
     gap: 2em;
 }
 
-.fly-item {
+.fly-item{
     position: absolute;
-    height: 16px;
+    height: 12px;
     font-size: var(--font-smaller);
-    padding: 3px;
+    padding: 1px;
     text-align: center;
     line-height: 10px;
-    color: var(--white-color);
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+/* .fly-number{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    width: 20px;
+} */
+.utem-number{
+    color: white;
+    font-size: smaller;
+    font-weight: 200;
 }
 
 nav .fly-item {
     top: 50%;
-    margin-top: -24px;
-    width: 30px;
-    border-radius: 3px;
-    right: -32px;
-    background-color: var(--primary-color);
+    margin-top: -18px;
+    width: 33px;
+    /* border-radius: 3px; */
+    right: -25px;
+    /* background-color: var(--white-color); */
+    
 }
 
 .header-nav .right{
@@ -219,9 +235,9 @@ nav .fly-item {
     position: relative;
 }
 .header-nav .right .fly-item{
-    top: 0;
-    right: 16px;
-    width: 16px;
+    top: 1px;
+    right: 13px;
+    width: 12px;
     background-color:var(--secondary-dark-color) ;
     border-radius: var(--percent50);
 }
@@ -247,6 +263,11 @@ input {
     .container{
         padding: 0 2em;
     }
+    /* header{
+        position: sticky;
+        top: 0;
+        width: 1280px;
+    } */
     .desktop-hide {
         display: none;
     }
@@ -259,7 +280,7 @@ input {
     .header-nav{
         padding: 0;
         margin: 0;
-        border-bottom: 0;
+        border-bottom: 1px solid rgb(230, 213, 213);
     }
     .header-nav .right li > a {
         margin-left: 1em;
